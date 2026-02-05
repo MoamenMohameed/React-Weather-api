@@ -43,7 +43,7 @@ useEffect(()=>{
 },[])
 useEffect(()=>{
     // i18n.changeLanguage("ar")
-    axios.get('https://api.openweathermap.org/data/2.5/weather?q=cairo&appid=9cf0d4d5a231e5470d1eb620471f5076')
+    axios.get('https://api.openweathermap.org/data/2.5/weather?q=cairo&appid={apikey}')
     .then(function (response) {
       // handle success
       console.log(response);
